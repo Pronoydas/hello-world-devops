@@ -13,4 +13,11 @@ jobs:
         run: |
              java --version 
              mvn --version
+  PrintContext:
+    needs: [ Test, Demo ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Context
+        run: echo "${{ toJson( github )}"
+  
       
