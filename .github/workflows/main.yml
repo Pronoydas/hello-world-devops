@@ -6,5 +6,11 @@ jobs:
     steps:
       - name: Print Statement
         run: echo "Hello World"
-  
+  Demo:
+    runs-on : ubuntu-latest
+    steps:
+      - name: Check S/W Version
+        run: |
+             java --version 
+             mvn --version
       
