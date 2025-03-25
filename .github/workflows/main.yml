@@ -1,0 +1,10 @@
+name: Deno GitHub Workflow
+on: workflow_dispatch
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Statement
+        run: echo "Hello World"
+  
+      
